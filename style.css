@@ -8,10 +8,12 @@ body {
   }
   .header h1 {
     overflow: hidden;
+    font-family: tahoma;
+        font-weight:900;
     font-size: 40px;
-    padding-left: 100px;
-    padding-right: 100px;
-    color: #2f1729;
+    padding-left: 200px;
+    padding-right: 200px;
+    color: #0b0c32;
   
     /* position: absolute; */
     left: 10px;
@@ -19,13 +21,24 @@ body {
   }
   
   .row h1 {
+    font-family: impact;
     font-size: 60px;
-    padding-left: 200px;
-    padding-top: 100px;
+    font-weight:900;
+    color: #0b0c32;
+    width:90%;
+
+    padding-left: 110px;
+    padding-top: 40px;
   }
   
   .row p {
-    padding-left: 200px
+    font-family:tahoma;
+    font-style: bold;  
+      color: #0b0c32;
+    width:40%;
+    left:145px;
+
+    top:445px;
   }
   
   
@@ -43,14 +56,14 @@ body {
     top: 28px;
     float: right;
     padding-top: 30px;
-    margin-left: 25%;
+    margin-left: 15%;
   }
   
   /* Style the navigation bar links */
   .topnav a {
     float: right;
     display: block;
-    color: #2f1729;
+    color: #0b0c32;
     text-align: center;
     padding: 14px 30px;
     text-decoration: none;
@@ -60,18 +73,19 @@ body {
   /* Right-aligned link */
   .topnav a.right {
     float: right;
-    color: #2f1729;
+    color: #0b0c32;
   }
   
   
   /* Active/current link */
   .topnav a.active {
-    color: #2f1729;
+    color: white;
+     background-color: #0b0c32;
   }
   
   /* Change color on hover */
   .topnav a:hover {
-    background-color: #2f1729;
+    background-color: #0b0c32;
     color: white;
   }
   
@@ -88,12 +102,12 @@ body {
   }
   
   input[type=text]:hover,textarea:hover,select[id="city"]:hover {
-    background-color: #f6bbb6;
+    background-color: #cae5da;
     cursor: pointer;
   }
   
   input[type=submit] {
-    background-color: #f4b543;
+    background-color: #ba3231;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -102,7 +116,7 @@ body {
   }
   
   input[type=submit]:hover {
-    background-color: #f9c94a;
+    background-color: #669f9e;
     cursor: pointer;
   }
   
@@ -194,3 +208,225 @@ body {
     display: block;
     text-align: justify;
   }
+
+  /*tracker*/
+  .tracker-card{
+    display: relative;
+    box-sizing: border-box;
+    margin: 100px;
+    width: 100%;
+  }
+
+  .row h3 {
+    font-size: 40px;
+    color: #2f1729;
+    width:40%;
+  
+    /* position: absolute; */
+  }
+   .right-hand-tracker-container{
+    overflow: hidden;
+    width: 100%;
+    margin: 20px;
+    display: block;
+    text-align: justify;
+    padding-right:1px;
+  }
+  .main p {
+    width:70%;
+  }
+
+
+/*reds*/
+  /*ABOUT*/
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+
+.container{
+  width:80%;
+  margin:auto;
+}
+
+/*CONTACT US*/
+  .top-contact-container{
+    display: relative;
+    box-sizing: border-box;
+  }
+
+  .contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-container{
+    display: flex;
+  }
+
+  .contact-us-container{
+    width: 90%;
+    margin: 20px;
+    display: block;
+    text-align: justify;
+  }
+
+  .left-hand-container{
+    overflow: hidden;
+    width: 100%;
+    margin: 20px;
+    display: block;
+    text-align: justify;
+  }
+
+
+/*GAME*/
+
+
+/*home*/
+<style>
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1;
+}
+
+.navbar {
+  overflow: hidden;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0
+  text-align: center;
+
+  position: absolute;
+  left: 175px;
+  top: 640px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  background-color: #ba3231;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+  border-radius:5px;
+}
+
+.navbar a.left {
+  float: left;
+  color: white;
+}
+
+
+/* Active/current link */
+.navbar a.active {
+  color: white;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #fEF6DA;
+  color: #ba3231;
+  }
+
+.navbar1 {
+  overflow: hidden;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  text-align: center;
+
+
+  position: absolute;
+  left: 395px;
+  top: 640px;
+}
+
+.navbar1 a {
+  float: left;
+  display: block;
+  color: white;
+  background-color: #ba3231;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+  border-radius:5px;
+
+}
+
+.navbar1 a.left {
+  float: left;
+  color: white;
+}
+
+
+/* Active/current link */
+.navbar1 a.active {
+  color: white;
+}
+
+/* Change color on hover */
+.navbar1 a:hover {
+  background-color: #fEF6DA;
+  color: #ba3231;
+  }
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  padding: 20px;
+  margin-right: 700px
+
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  width: 100%;
+  padding: 20px;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>

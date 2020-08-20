@@ -7,13 +7,14 @@
 <body style="background: #fEF6DA">
   <div class="navbar-container">
     <div class="header">
-      <h1 align="left">Candy Trash</h1>  
+     <h1 align="left">Tap On!</h1>  
+      <img src="TO.png" style="position: absolute;top: 36px; left: 145px; max-height: 50px;max-width: 130px;">
     </div>
     <div class="topnav">
-      <a href="#" class="active"><strong>Contact Us</strong></a>
-      <a href="#">Tracker</a>
-      <a href="#">Game</a>
-      <a href="http://zushenyan.github.io/Match3Gem/">About</a>
+      <a href="contactus.html" class="active"><strong>Contact Us</strong></a>
+      <a href="tracker.html">Tracker</a>
+      <a href="game.html">Game</a>
+      <a href="about.html">About</a>
       <a href="home.html">Home</a>
     </div>
   </div>
@@ -22,40 +23,34 @@
   <div class="contact-container">
   
         <div class="left-hand-container">
-          <div class="contact-us-container">
+          <div class="contact-us-container" style="position:absolute;left:150px; top:300px; width:30%;">
             <h1>CONTACT US</h1>
-            <h5>
+            <h4>
               Want to have a partnership with us for an initiative? <br><br>
-              Feel free to message us the details and try to attach a Memorandum of Agreement or
-              Memorandum of Understanding to process your request faster.<br>
-              <br>
-              If you have any concerns that is related to one of our departments and would like to message them directly,
-              you may refer to our directory
-            </h5>
-          </div>
-          <div class="card">
-            <img align="center" src="1.png" alt="Jane" style="width:10%">
-            <div class="container">
-              <h2 align="center">Jane Doe</h2>
-              <p align="center" class="title">CEO & Founder</p>
-              <p align="center">Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p align="center">jane@example.com</p>
-            </div>
+              Feel free to send us a message and we will surely respond to your request. Also, if you have any concerns or clarifications that is related to any of our departments, just submit your inquiry here. 
+<br> <br>
+              Thank you. Have a nice day ahead!
+            </h4>
           </div>
         </div>
         
 
-        <div class="column">
+        <div class="column" style="background-color: #f1f8f1;">
           <form action="/action_page.php">
-            <label for="fname">First Name</label>
+            <label for="fname">Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="lname">Email</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your email..">
             <label for="city">City</label>
             <select id="city" name="city">
-              <option value="starosa">Sta. Rosa</option>
-              <option value="binan">Biñan</option>
-              <option value="cabuyao">Cabuyao</option>
+              <option value="0">Select City</option>
+              <option value="1">Quezon</option>
+              <option value="2">Makati</option>
+              <option value="3">Pasay</option>
+              <option value="4">Taguig</option>
+              <option value="5">Parañaque</option>
+              <option value="6">Pasig</option>
+              <option value="7">Mandaluyong</option>
             </select>
             <label for="subject">Subject</label>
             <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
