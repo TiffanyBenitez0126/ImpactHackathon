@@ -13,7 +13,7 @@ body {
     font-size: 40px;
     padding-left: 200px;
     padding-right: 200px;
-    color: #0b0c32;
+    color: #000928;
   
     /* position: absolute; */
     left: 10px;
@@ -24,7 +24,7 @@ body {
     font-family: impact;
     font-size: 60px;
     font-weight:900;
-    color: #0b0c32;
+    color: #000928;
     width:90%;
 
     padding-left: 110px;
@@ -34,7 +34,7 @@ body {
   .row p {
     font-family:tahoma;
     font-style: bold;  
-      color: #0b0c32;
+      color: #000928;
     width:40%;
     left:145px;
 
@@ -48,7 +48,7 @@ body {
     /* position: sticky; */
     /* position: -webkit-sticky; */
     top: 0
-    background: #2f1729;
+    background: #000928;
     text-align: center;
   
     /* position: absolute; */
@@ -63,7 +63,7 @@ body {
   .topnav a {
     float: right;
     display: block;
-    color: #0b0c32;
+    color: #000928;
     text-align: center;
     padding: 14px 30px;
     text-decoration: none;
@@ -73,19 +73,19 @@ body {
   /* Right-aligned link */
   .topnav a.right {
     float: right;
-    color: #0b0c32;
+    color: #000928;
   }
   
   
   /* Active/current link */
   .topnav a.active {
     color: white;
-     background-color: #0b0c32;
+     background-color: #000928;
   }
   
   /* Change color on hover */
   .topnav a:hover {
-    background-color: #0b0c32;
+    background-color: #000928;
     color: white;
   }
   
@@ -93,22 +93,22 @@ body {
   input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #7f7e84;
+    border: 1px solid white;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-    background-color: #bbb4ae;
+    background-color: white;
     cursor: pointer;
   }
   
   input[type=text]:hover,textarea:hover,select[id="city"]:hover {
-    background-color: #cae5da;
+    background-color: white;
     cursor: pointer;
   }
   
   input[type=submit] {
-    background-color: #ba3231;
-    color: white;
+    background-color: #ffcc00;
+    color: #000928;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
@@ -116,7 +116,7 @@ body {
   }
   
   input[type=submit]:hover {
-    background-color: #669f9e;
+    background-color: white;
     cursor: pointer;
   }
   
@@ -324,7 +324,7 @@ body {
   float: left;
   display: block;
   color: white;
-  background-color: #ba3231;
+  background-color: #ffcc00;
   text-align: center;
   padding: 14px 50px;
   text-decoration: none;
@@ -344,8 +344,8 @@ body {
 
 /* Change color on hover */
 .navbar a:hover {
-  background-color: #fEF6DA;
-  color: #ba3231;
+  background-color: white;
+  color: #ffcc00;
   }
 
 .navbar1 {
@@ -365,7 +365,7 @@ body {
   float: left;
   display: block;
   color: white;
-  background-color: #ba3231;
+  background-color: #ffcc00;
   text-align: center;
   padding: 14px 50px;
   text-decoration: none;
@@ -386,8 +386,8 @@ body {
 
 /* Change color on hover */
 .navbar1 a:hover {
-  background-color: #fEF6DA;
-  color: #ba3231;
+  background-color: white;
+  color: #ffcc00;
   }
 
 /* Column container */
