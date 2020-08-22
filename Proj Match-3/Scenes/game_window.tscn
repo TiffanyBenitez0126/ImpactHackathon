@@ -1,0 +1,81 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://art/Bottom UI.png" type="Texture" id=1]
+[ext_resource path="res://TopUI.tscn" type="PackedScene" id=2]
+[ext_resource path="res://art/pixel-wallpaper-3.jpg" type="Texture" id=3]
+[ext_resource path="res://Scripts/grid.gd" type="Script" id=4]
+[ext_resource path="res://Scenes/EndGamePanel.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Music/Bar Party Music L - No Copyright Music.wav" type="AudioStream" id=6]
+
+[node name="game_window" type="Node2D"]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+margin_right = 576.0
+margin_bottom = 1020.0
+rect_min_size = Vector2( 576, 1020 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer"]
+margin_right = 576.0
+margin_bottom = 1020.0
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 7
+
+[node name="TopUI" parent="." instance=ExtResource( 2 )]
+margin_left = 4.1622
+margin_top = 1.78381
+margin_right = 571.162
+margin_bottom = 126.784
+
+[node name="BottomUI" type="TextureRect" parent="."]
+margin_top = 928.0
+margin_right = 576.0
+margin_bottom = 1020.0
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="grid" type="Node2D" parent="."]
+script = ExtResource( 4 )
+width = 8
+height = 10
+x_start = 64
+y_start = 800
+offset = 64
+y_offset = 2
+piece_value = 10
+current_counter_value = 25
+is_moves = true
+
+[node name="Timer" type="Timer" parent="grid"]
+
+[node name="destroy_timer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[node name="collapse_timer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[node name="refill_timer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[node name="GameOverPanel" parent="." instance=ExtResource( 5 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+autoplay = true
+[connection signal="game_over" from="grid" to="GameOverPanel" method="_on_grid_game_over"]
+[connection signal="game_over" from="grid" to="TopUI" method="_on_grid_game_over"]
+[connection signal="update_counter" from="grid" to="TopUI" method="_on_grid_update_counter"]
+[connection signal="update_score" from="grid" to="TopUI" method="_on_grid_update_score"]
+[connection signal="timeout" from="grid/Timer" to="grid" method="_on_Timer_timeout"]
+[connection signal="timeout" from="destroy_timer" to="grid" method="_on_destroy_timer_timeout"]
+[connection signal="timeout" from="collapse_timer" to="grid" method="_on_collapse_timer_timeout"]
+[connection signal="timeout" from="refill_timer" to="grid" method="_on_refill_timer_timeout"]
